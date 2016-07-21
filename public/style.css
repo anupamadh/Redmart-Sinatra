@@ -1,0 +1,11 @@
+.table-striped>tbody>tr:nth-child(even)>td{
+    background-color:  #ffd700;
+}
+
+/*.table-striped>tbody>tr:nth-child(even)>td:hover{
+    background-color:  #ff0700;
+}*/
+
+.table-striped > tbody > tr:hover{
+    background-color:  #ff0700;
+}

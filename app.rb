@@ -3,6 +3,10 @@ class RedMartSinatraApp < Sinatra::Base
   erb  "Hello World"
   end
 
+  get '/about' do
+  erb  "About me"
+  end
+
   get '/users' do
     @users = User.all
     erb:'users'

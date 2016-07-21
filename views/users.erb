@@ -21,17 +21,17 @@
   </thead>
   <tbody>
     <% @users.each do |user| %>
-    <tr>
-      <td>
+    <tr class="active">
+      <td class="active">
         <%= user[:id] %>
       </td>
-      <td >
+      <td class="active" >
         <%= user[:name] %>
       </td>
-      <td >
+      <td class="active">
         <%= user[:email] %>
       </td>
-      <td >
+      <td class="active">
         <%= user[:date_joined] %>
       </td>
     </tr>
