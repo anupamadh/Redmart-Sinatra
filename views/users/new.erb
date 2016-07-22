@@ -2,11 +2,16 @@
 <form action="/users" method="post">
   <div class="form-group">
     <label for="name">New User Name:</label>
-    <input id="name" type="text" name="user[name]" value="">
+    <input id="name" type="text" name="user[name]" value="" required>
+  </div>
+  <div class="form-group">
+    <label> Email
+      <input type="text" name="user[email]" value="" required>
+    </label>
   </div>
   <div class="form-group">
     <label> Address
-      <input type="text" name="user[address]" value="">
+      <input type="text" name="user[address]" value="" required="">
     </label>
   </div>
   <input type="submit" name="name" value="submit">
