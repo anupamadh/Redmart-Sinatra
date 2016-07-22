@@ -9,11 +9,12 @@ class RedMartSinatraApp < Sinatra::Base
 
   get '/users' do
     @users = User.all
-    erb:'users'
+    erb:'users/index'
   end
 
-  # get '/books/:id' do
-  #   erb:'each_book'
-  # end
+  get '/users/:id' do
+    @user_id = User.find(params[:id])
+    erb:'users/show'
+  end
 
 end
