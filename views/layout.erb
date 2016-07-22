@@ -8,9 +8,15 @@
   </head>
   <body>
     <div class="container">
-      <p class="lead">
-      <%=yield%>
-      </p>
+
+        <h1>Welcome to RedMart</h1>
+     <ul>
+       <li><a href="/users">Users</a></li>
+       <li><a href="/users/new">Register</a></li>
+     </ul>
+
+    <%=yield%>
+
     </div>
     <script src="<%= url('js/script.js') %>" charset="utf-8"></script>
   </body>
