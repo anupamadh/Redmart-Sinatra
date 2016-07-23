@@ -1,7 +1,7 @@
-require './models/brand'
+require './models/category'
 require 'faker'
 
 # seeds.db is a way of automating the population of the database with testing data
 (0..10).each do |i|
-  Brand.create(name: Faker::Commerce.product_name)
+  Category.create(name: Faker::Commerce.product_name)
 end
