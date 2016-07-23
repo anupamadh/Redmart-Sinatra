@@ -28,7 +28,6 @@ class RedMartSinatraApp < Sinatra::Base
   end
 
   post '/users' do
-      puts params
       puts params[:user]
       #create user name, do it this way so you can check if user can be saved
       @new_user = User.new(params[:user])
@@ -78,7 +77,6 @@ class RedMartSinatraApp < Sinatra::Base
   end
 
   post '/products' do
-      puts params
       puts params[:product]
       #create user name, do it this way so you can check if user can be saved
       @new_product = Product.new(params[:product])
