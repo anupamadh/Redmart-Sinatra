@@ -1,23 +1,24 @@
 <h3>Form to create new Product</h3>
 <form action="/products" method="post">
   <div class="form-group">
-    <label for="name">New Product Name:</label>
-    <input id="name" type="text" name="product[name]" value="" required>
+    <label for="name">New Product Name
+    <input id="name" class="form-control" type="text" name="product[name]" value="" required>
+</label>
   </div>
   <div class="form-group">
     <label> Brand Id
-      <input type="text" name="product[brand_id]" value="" required>
+      <input type="text"  class="form-control" name="product[brand_id]" value="" required>
     </label>
   </div>
   <div class="form-group">
     <label> Category Id
-      <input type="text" name="product[category_id]" value="" required="">
+      <input type="text" class="form-control" name="product[category_id]" value="" required="">
     </label>
   </div>
   <div class="form-group">
     <label> Price
-      <input type="text" name="product[price]" value="" required="">
+      <input type="text" class="form-control" name="product[price]" value="" required="">
     </label>
   </div>
-  <input type="submit" name="name" value="submit">
+  <input type="submit" class="btn btn-default" name="name" value="Submit">
 </form>
