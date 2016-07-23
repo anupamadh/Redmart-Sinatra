@@ -52,7 +52,7 @@ class RedMartSinatraApp < Sinatra::Base
     if @deleted_user.destroy
       redirect('/users')
     else
-      erb :"users"
+      erb :"users/#{ @deleted_user.id }"
     end
   end
 
@@ -81,7 +81,7 @@ class RedMartSinatraApp < Sinatra::Base
       puts params
       puts params[:product]
       #create user name, do it this way so you can check if user can be saved
-      @new_product = User.new(params[:product])
+      @new_product = Product.new(params[:product])
       if @new_product.save
         redirect('/products')
       else
@@ -89,7 +89,7 @@ class RedMartSinatraApp < Sinatra::Base
     end
 
     put '/products/:id' do
-      @updated_product = User.find(params[:id])
+      @updated_product = Product.find(params[:id])
       if @updated_product.update_attributes(params[:product])
       redirect('/products')
       end
@@ -102,7 +102,7 @@ class RedMartSinatraApp < Sinatra::Base
     if @deleted_product.destroy
       redirect('/products')
     else
-      erb :"products"
+      erb :"products/#{ @deleted_product.id }"
     end
   end
 

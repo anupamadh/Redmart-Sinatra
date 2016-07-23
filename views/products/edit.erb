@@ -1,22 +1,22 @@
 <form action="/products/<%= @product[:id] %>" method="post">
   <input type="hidden" name="_method" value="put">
 <div class="form-group">
-  <label for="name">New User Name:</label>
+  <label for="name">New Product Name:</label>
   <input id="name" type="text" name="product[name]" value="<%= @product[:name] %>" required>
 </div>
 <div class="form-group">
   <label> Brand Id
-    <input type="text" name="user[brand_id]" value=" <%= @product[:brand_id] %>" required>
+    <input type="text" name="product[brand_id]" value=" <%= @product[:brand_id] %>" required>
   </label>
 </div>
 <div class="form-group">
   <label> Category Id
-    <input type="text" name="user[category_id]" value="<%= @product[:category_id] %>" required="">
+    <input type="text" name="product[category_id]" value="<%= @product[:category_id] %>" required="">
   </label>
 </div>
 <div class="form-group">
   <label> Price
-    <input type="text" name="user[price]" value="<%= @product[:price] %>" required="">
+    <input type="text" name="product[price]" value="<%= @product[:price] %>" required="">
   </label>
 </div>
   <input type="submit" name="name" value="submit">
