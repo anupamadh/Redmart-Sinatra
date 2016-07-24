@@ -1,5 +1,3 @@
 
-This is a Sinatra App for reading data from the Users table in Redmart database.
+This is a Sinatra App for Creating, reading, updating and deleting data from the Users and Products table in Redmart database.
 CSS Framework: Bootstrap
-The Users data is displayed as a table.
-=======
