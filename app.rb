@@ -1,11 +1,8 @@
 class RedMartSinatraApp < Sinatra::Base
   get '/' do
-  erb  "Hello World"
+  erb "<h2>Welcome to redmart</h2>"
   end
 
-  get '/about' do
-  erb  "About me"
-  end
 
   get '/users' do
     @users = User.all
@@ -34,6 +31,7 @@ class RedMartSinatraApp < Sinatra::Base
       if @new_user.save
         redirect('/users')
       else
+        erb:'users/new'
       end
     end
 
@@ -83,6 +81,7 @@ class RedMartSinatraApp < Sinatra::Base
       if @new_product.save
         redirect('/products')
       else
+         erb:'products/new'
       end
     end
 

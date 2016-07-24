@@ -1,7 +1,7 @@
 <form action="/products/<%= @product[:id] %>" method="post">
   <input type="hidden" name="_method" value="put">
 <div class="form-group">
-  <label for="name">New Product Name:</label>
+  <label for="name">New Product Name</label>
   <input id="name" type="text" name="product[name]" value="<%= @product[:name] %>" required>
 </div>
 <div class="form-group">
